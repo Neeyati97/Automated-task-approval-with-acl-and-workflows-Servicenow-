@@ -3,7 +3,7 @@
 This project showcases an automated task management and approval workflow developed using ServiceNow. It leverages Flow Designer, Access Controls (ACLs), and role-based permissions to automate task assignments and streamline approval processes.
 
 🔧 Configuration & Setup
-Step	Screenshot
+
 1. Add Role in ACL	
 2. Create Flow	
 3. Elevate Role	
@@ -11,6 +11,7 @@ Step	Screenshot
 5. Group: Project Team	
 
 👥 User Setup
+
 1. Bob User Details	
 2. Check Bob After Activation	
 3. Alice User Details	
@@ -32,37 +33,38 @@ Step	Screenshot
 
 🔐 ACLs & Access
 
-1.Update Task Table ACL	
-2.Status ACL	
-3.Other 4 ACLs	
+1. Update Task Table ACL	
+2. Status ACL	
+3. Other 4 ACLs	
 
 🔁 Flow Execution
-4.Step	Screenshot
-5.Trigger	
-6.Ask for Approval
+
+1. Trigger	
+2. Ask for Approval
 
 ⚙️ Key Features
-1.Custom task table (Task Table 2)
 
-2.Field-level access restrictions via ACLs
+1. Custom task table (Task Table 2)
+
+2. Field-level access restrictions via ACLs
 
 
 Automated Flow triggered on task creation with specific conditions:
 
-1.Status: "In Progress"
+1. Status: "In Progress"
 
-2.Comments: "Feedback"
+2. Comments: "Feedback"
 
-3.Assigned To: "Bob"
+3. Assigned To: "Bob"
 
-4.Approval automatically requested from Alice P
+4. Approval automatically requested from Alice P
 
-5.Approval tracking via My Approvals
+5. Approval tracking via My Approvals
 
 💾 Update Set
 
 -> The project includes an XML export of the update set:
-update-set/task-approval-update-set.xml
+->update-set/task-approval-update-set.xml
 
 👥 Roles Involved
 1. Admin: Configures Flow Designer, ACLs, and overall system behavior
@@ -72,15 +74,16 @@ update-set/task-approval-update-set.xml
 3. Alice P: Task approver (receives and responds to the approval request)
 
 🧪 How to Test
-1.Impersonate Bob
+
+1. Impersonate Bob
 → Create a new task
 → Set:
 
-i.Status: In Progress
+i. Status: In Progress
 
-ii.Comments: Feedback
+ii. Comments: Feedback
 
-2.Approval is routed to Alice P
+2. Approval is routed to Alice P
 → Impersonate Alice to review and approve the task
 
 → Observe task status updates based on approval outcome
