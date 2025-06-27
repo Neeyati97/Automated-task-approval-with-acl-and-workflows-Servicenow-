@@ -32,53 +32,55 @@ Step	Screenshot
 
 🔐 ACLs & Access
 
-Update Task Table ACL	
-Status ACL	
-Other 4 ACLs	
+1.Update Task Table ACL	
+2.Status ACL	
+3.Other 4 ACLs	
 
 🔁 Flow Execution
-Step	Screenshot
-Trigger	
-Ask for Approval
+4.Step	Screenshot
+5.Trigger	
+6.Ask for Approval
 
 ⚙️ Key Features
-Custom task table (Task Table 2)
+1.Custom task table (Task Table 2)
 
-Field-level access restrictions via ACLs
+2.Field-level access restrictions via ACLs
+
 
 Automated Flow triggered on task creation with specific conditions:
 
-Status: "In Progress"
+1.Status: "In Progress"
 
-Comments: "Feedback"
+2.Comments: "Feedback"
 
-Assigned To: "Bob"
+3.Assigned To: "Bob"
 
-Approval automatically requested from Alice P
+4.Approval automatically requested from Alice P
 
-Approval tracking via My Approvals
+5.Approval tracking via My Approvals
 
 💾 Update Set
-The project includes an XML export of the update set:
+
+-> The project includes an XML export of the update set:
 update-set/task-approval-update-set.xml
 
 👥 Roles Involved
-Admin: Configures Flow Designer, ACLs, and overall system behavior
+1. Admin: Configures Flow Designer, ACLs, and overall system behavior
 
-Bob: Task assignee (initiates the request)
+2. Bob: Task assignee (initiates the request)
 
-Alice P: Task approver (receives and responds to the approval request)
+3. Alice P: Task approver (receives and responds to the approval request)
 
 🧪 How to Test
-Impersonate Bob
+1.Impersonate Bob
 → Create a new task
 → Set:
 
-Status: In Progress
+i.Status: In Progress
 
-Comments: Feedback
+ii.Comments: Feedback
 
-Approval is routed to Alice P
+2.Approval is routed to Alice P
 → Impersonate Alice to review and approve the task
 
-Observe task status updates based on approval outcome
+→ Observe task status updates based on approval outcome
