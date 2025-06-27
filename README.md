@@ -83,7 +83,8 @@ i. Status: In Progress
 
 ii. Comments: Feedback
 
-2. Approval is routed to Alice P
+2. Approval is routed to Alice P:
+   
 i. Impersonate Alice to review and approve the task
 
 ii. Observe task status updates based on approval outcome
